@@ -9,7 +9,8 @@ public class LeerJsonPersona {
 	
 	public Persona getPersona(String json) {
 		ObjectMapper mapper = new ObjectMapper();
-		JsonNode nodo=null;
+		JsonNode nodo=null; 
+		
 		try {
 			nodo = mapper.readTree(json);
 		} catch (JsonMappingException e) {
